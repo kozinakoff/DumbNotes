@@ -3,27 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		80EB02842469A7D50098417C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EB02832469A7D50098417C /* AppDelegate.swift */; };
 		80EB02862469A7D50098417C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EB02852469A7D50098417C /* SceneDelegate.swift */; };
-		80EB02882469A7D50098417C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EB02872469A7D50098417C /* ViewController.swift */; };
-		80EB028B2469A7D50098417C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80EB02892469A7D50098417C /* Main.storyboard */; };
 		80EB028D2469A7D90098417C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80EB028C2469A7D90098417C /* Assets.xcassets */; };
 		80EB02902469A7D90098417C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80EB028E2469A7D90098417C /* LaunchScreen.storyboard */; };
+		80EB02992469A9410098417C /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 80EB02982469A9410098417C /* Realm */; };
+		80EB029B2469A9410098417C /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 80EB029A2469A9410098417C /* RealmSwift */; };
+		80EB02A22469AAD90098417C /* ItemsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EB02A12469AAD90098417C /* ItemsContract.swift */; };
+		80EB02A72469ABA00098417C /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EB02A62469ABA00098417C /* ItemsView.swift */; };
+		80EB02A92469ABCF0098417C /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EB02A82469ABCF0098417C /* Items.swift */; };
+		80EB02AB2469AC5A0098417C /* ItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EB02AA2469AC5A0098417C /* ItemsModel.swift */; };
+		80EB02AD2469AC810098417C /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EB02AC2469AC810098417C /* ItemsViewController.swift */; };
+		80EB02B42469ADF10098417C /* ItemDetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EB02B32469ADF10098417C /* ItemDetailContract.swift */; };
+		80EB02B62469AE190098417C /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EB02B52469AE190098417C /* ItemDetailViewController.swift */; };
+		80EB02B82469AE3E0098417C /* ItemDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EB02B72469AE3E0098417C /* ItemDetailModel.swift */; };
+		80EB02BA2469AE610098417C /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EB02B92469AE610098417C /* ItemDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		80EB02802469A7D50098417C /* DumbNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DumbNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80EB02832469A7D50098417C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80EB02852469A7D50098417C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		80EB02872469A7D50098417C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		80EB028A2469A7D50098417C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80EB028C2469A7D90098417C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80EB028F2469A7D90098417C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80EB02912469A7D90098417C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80EB02A12469AAD90098417C /* ItemsContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsContract.swift; sourceTree = "<group>"; };
+		80EB02A62469ABA00098417C /* ItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
+		80EB02A82469ABCF0098417C /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		80EB02AA2469AC5A0098417C /* ItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsModel.swift; sourceTree = "<group>"; };
+		80EB02AC2469AC810098417C /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		80EB02B32469ADF10098417C /* ItemDetailContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailContract.swift; sourceTree = "<group>"; };
+		80EB02B52469AE190098417C /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		80EB02B72469AE3E0098417C /* ItemDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailModel.swift; sourceTree = "<group>"; };
+		80EB02B92469AE610098417C /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80EB029B2469A9410098417C /* RealmSwift in Frameworks */,
+				80EB02992469A9410098417C /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +74,126 @@
 		80EB02822469A7D50098417C /* DumbNotes */ = {
 			isa = PBXGroup;
 			children = (
-				80EB02832469A7D50098417C /* AppDelegate.swift */,
-				80EB02852469A7D50098417C /* SceneDelegate.swift */,
-				80EB02872469A7D50098417C /* ViewController.swift */,
-				80EB02892469A7D50098417C /* Main.storyboard */,
+				80EB029E2469AA020098417C /* App */,
+				80EB029D2469A9EB0098417C /* Modules */,
+				80EB029C2469A9C00098417C /* Supporting Files */,
+			);
+			path = DumbNotes;
+			sourceTree = "<group>";
+		};
+		80EB029C2469A9C00098417C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				80EB028C2469A7D90098417C /* Assets.xcassets */,
 				80EB028E2469A7D90098417C /* LaunchScreen.storyboard */,
 				80EB02912469A7D90098417C /* Info.plist */,
 			);
-			path = DumbNotes;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80EB029D2469A9EB0098417C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				80EB02AE2469AD390098417C /* ItemDetail */,
+				80EB029F2469AAAF0098417C /* Items */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		80EB029E2469AA020098417C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				80EB02832469A7D50098417C /* AppDelegate.swift */,
+				80EB02852469A7D50098417C /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		80EB029F2469AAAF0098417C /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				80EB02A52469AB690098417C /* Controller */,
+				80EB02A42469AB640098417C /* View */,
+				80EB02A32469AB5F0098417C /* Model */,
+				80EB02A02469AABA0098417C /* Contract */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		80EB02A02469AABA0098417C /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				80EB02A12469AAD90098417C /* ItemsContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		80EB02A32469AB5F0098417C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80EB02A82469ABCF0098417C /* Items.swift */,
+				80EB02AA2469AC5A0098417C /* ItemsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80EB02A42469AB640098417C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80EB02A62469ABA00098417C /* ItemsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80EB02A52469AB690098417C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				80EB02AC2469AC810098417C /* ItemsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		80EB02AE2469AD390098417C /* ItemDetail */ = {
+			isa = PBXGroup;
+			children = (
+				80EB02AF2469AD550098417C /* Controller */,
+				80EB02B02469AD5D0098417C /* View */,
+				80EB02B12469AD700098417C /* Model */,
+				80EB02B22469AD810098417C /* Contract */,
+			);
+			path = ItemDetail;
+			sourceTree = "<group>";
+		};
+		80EB02AF2469AD550098417C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				80EB02B52469AE190098417C /* ItemDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		80EB02B02469AD5D0098417C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80EB02B92469AE610098417C /* ItemDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80EB02B12469AD700098417C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80EB02B72469AE3E0098417C /* ItemDetailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80EB02B22469AD810098417C /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				80EB02B32469ADF10098417C /* ItemDetailContract.swift */,
+			);
+			path = Contract;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +212,10 @@
 			dependencies = (
 			);
 			name = DumbNotes;
+			packageProductDependencies = (
+				80EB02982469A9410098417C /* Realm */,
+				80EB029A2469A9410098417C /* RealmSwift */,
+			);
 			productName = DumbNotes;
 			productReference = 80EB02802469A7D50098417C /* DumbNotes.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +244,9 @@
 				Base,
 			);
 			mainGroup = 80EB02772469A7D50098417C;
+			packageReferences = (
+				80EB02972469A9410098417C /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = 80EB02812469A7D50098417C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +263,6 @@
 			files = (
 				80EB02902469A7D90098417C /* LaunchScreen.storyboard in Resources */,
 				80EB028D2469A7D90098417C /* Assets.xcassets in Resources */,
-				80EB028B2469A7D50098417C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +273,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80EB02882469A7D50098417C /* ViewController.swift in Sources */,
 				80EB02842469A7D50098417C /* AppDelegate.swift in Sources */,
+				80EB02B82469AE3E0098417C /* ItemDetailModel.swift in Sources */,
+				80EB02A92469ABCF0098417C /* Items.swift in Sources */,
+				80EB02BA2469AE610098417C /* ItemDetailView.swift in Sources */,
+				80EB02A22469AAD90098417C /* ItemsContract.swift in Sources */,
+				80EB02B42469ADF10098417C /* ItemDetailContract.swift in Sources */,
 				80EB02862469A7D50098417C /* SceneDelegate.swift in Sources */,
+				80EB02B62469AE190098417C /* ItemDetailViewController.swift in Sources */,
+				80EB02AD2469AC810098417C /* ItemsViewController.swift in Sources */,
+				80EB02AB2469AC5A0098417C /* ItemsModel.swift in Sources */,
+				80EB02A72469ABA00098417C /* ItemsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		80EB02892469A7D50098417C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				80EB028A2469A7D50098417C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		80EB028E2469A7D90098417C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,7 +421,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4DZQ8R87XF;
-				INFOPLIST_FILE = DumbNotes/Info.plist;
+				INFOPLIST_FILE = "DumbNotes/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +439,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4DZQ8R87XF;
-				INFOPLIST_FILE = DumbNotes/Info.plist;
+				INFOPLIST_FILE = "DumbNotes/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,6 +473,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		80EB02972469A9410098417C /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		80EB02982469A9410098417C /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80EB02972469A9410098417C /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		80EB029A2469A9410098417C /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80EB02972469A9410098417C /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 80EB02782469A7D50098417C /* Project object */;
 }
