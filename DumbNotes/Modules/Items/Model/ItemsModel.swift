@@ -12,21 +12,30 @@ class ItemsModel {
     
     weak var controller: ItemsModelOutput?
     
-    private var items: Results<Item>?
+    private var items: [Item]?
     private var realm = try! Realm()
+    
+    private var filteredItems = [Item]()
 }
 
 // MARK: - Controller Input
 extension ItemsModel: ItemsControllerInput {
     
     func retrieveItems() {
-        print("Controller tells the Model to retrieve items")
-        self.items = realm.objects(Item.self)
-        controller?.onItemsRetrieval(self.items!)
+        self.items = realm.objects(Item.self).map { $0 }
+        controller?.onItemsRetrieval(self.items ?? [])
+    }
+    
+    func searchItems(query: String) {
+        if let items = items, !query.isEmpty {
+            filteredItems = items.filter { (item: Item) -> Bool in
+                return item.title.lowercased().contains(query.lowercased() )
+            }
+            controller?.onItemsRetrieval(filteredItems)
+        }
     }
     
     func addItem(title: String) {
-        print("Controller tells the Model to add an item with title \(title)")
         let item = Item(title: title)
         do {
             try self.realm.write {
@@ -39,7 +48,6 @@ extension ItemsModel: ItemsControllerInput {
     }
     
     func deleteItem(at index: Int) {
-        print("Controller tells the Model to delete an item at the index \(index)")
         if let items = items {
             do {
                 try self.realm.write {
@@ -52,9 +60,8 @@ extension ItemsModel: ItemsControllerInput {
         }
     }
     
-    func retrieveItemUUID(for index: Int) {
-        print("Controller tells the Model to retrieve an UUID of an item at the index \(index)")
-        let itemUUID = self.items![index].id
+    func retrieveItemUUID(for index: Int, _ isFiltering: Bool) {
+        let itemUUID = isFiltering ? self.filteredItems[index].id : self.items![index].id
         controller?.onUUIDRetrieval(uuid: itemUUID)
     }
     

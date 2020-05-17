@@ -18,19 +18,21 @@ protocol ItemsViewInput: class {
     func onSaveTap(title: String)
     func onDeleteSelection(index: Int)
     func onCellSelection(index: Int)
+    func onSearchItems(query: String)
 }
 
 protocol ItemsControllerInput: class {
     var controller: ItemsModelOutput? { get set }
     
     func retrieveItems()
+    func searchItems(query: String)
     func addItem(title: String)
     func deleteItem(at index: Int)
-    func retrieveItemUUID(for index: Int)
+    func retrieveItemUUID(for index: Int, _ isFiltering: Bool)
 }
 
 protocol ItemsModelOutput: class {
-    func onItemsRetrieval(_ items: Results<Item>)
+    func onItemsRetrieval(_ items: [Item])
     func onItemAddition(item: Item)
     func onItemDeletion(index: Int)
     func onUUIDRetrieval(uuid: String)
@@ -40,6 +42,7 @@ protocol ItemsControllerOutput: class {
     var controller: ItemsViewInput? { get set }
     
     func onItemsRetrieval(titles: [String])
+    func onItemSearch(query: String)
     func onItemAddition(title: String)
     func onItemDeletion(index: Int)
 }

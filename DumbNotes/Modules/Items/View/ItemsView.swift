@@ -81,19 +81,20 @@ class ItemsView: UIView {
 extension ItemsView: ItemsControllerOutput {
     
     func onItemsRetrieval(titles: [String]) {
-        print("View receives a result from Controller and updates itself")
         self.titles = titles
         self.tableView.reloadData()
     }
     
+    func onItemSearch(query: String) {
+        print("@@search1 query = \(query)")
+    }
+    
     func onItemAddition(title: String) {
-        print("View receives a result from Controller and updates itself")
         self.titles.append(title)
         self.tableView.reloadData()
     }
     
     func onItemDeletion(index: Int) {
-        print("View receives a result from Controller and updates itself")
         self.titles.remove(at: index)
         self.tableView.reloadData()
     }
@@ -125,6 +126,14 @@ extension ItemsView: UITableViewDelegate, UITableViewDataSource {
         if editingStyle == .delete {
             controller?.onDeleteSelection(index: indexPath.row)
         }
+    }
+}
+
+// MARK: - UISearchResultsUpdating
+extension ItemsView: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        let searchBar = searchController.searchBar
+        controller?.onSearchItems(query: searchBar.text!)
     }
 }
 
