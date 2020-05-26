@@ -16,6 +16,8 @@ class ItemsView: UIView {
         setupUI()
     }
     
+    // MARK: see https://www.jessesquires.com/blog/2020/05/20/marking-unused-required-initializers-as-unavailable/?utm_campaign=iOS%2BDev%2BWeekly&utm_medium=web&utm_source=iOS%2BDev%2BWeekly%2BIssue%2B457
+    @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
